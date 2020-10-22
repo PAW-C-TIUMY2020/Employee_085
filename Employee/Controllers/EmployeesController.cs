@@ -46,7 +46,6 @@ namespace Employee.Controllers
                     _context.Add(employees);
                 else
                     _context.Update(employees);
-                _context.Add(employees);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
